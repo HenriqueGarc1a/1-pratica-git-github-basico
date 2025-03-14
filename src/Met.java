@@ -16,6 +16,23 @@ public class Met{
           }
           
           return false;
-          
+
     }
+
+    public static ArrayList<Integer> listRepeat(ArrayList< Integer > l){
+
+        ArrayList<Integer> x = new ArrayList<>();
+
+        for(int i = 0;i<l.size();i++){
+            for(int j= 0;j<l.size();j++){
+
+                    if(i!= j && l.get(i) == l.get(j) && !x.contains(l.get(j)))
+                        x.add(l.get(j));
+            }
+          }
+          
+          return x;
+
+    }
+        
 }
