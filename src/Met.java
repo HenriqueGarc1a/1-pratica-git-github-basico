@@ -34,5 +34,28 @@ public class Met{
           return x;
 
     }
+
+    public static ArrayList<Integer> intersect(ArrayList<Integer> l1, ArrayList<Integer> l2){
+
+         ArrayList<Integer> x = new ArrayList<>();
+
+
+         for(int i = 0;i<l1.size();i++){
+            for(int j= 0;j<l2.size();j++){
+
+              
+
+                if(l1.get(i)-l2.get(j) == 0 && !x.contains(l2.get(j)))
+                        x.add(l2.get(j));
+
+                
+
+            }
+          }
+
+          return x;
+
+
+    }
         
 }
